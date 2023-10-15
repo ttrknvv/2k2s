@@ -1,0 +1,50 @@
+@import './mixinForAll.scss';
+.filter {
+    @include flexboxer(20px, row, flex-start);
+    width: 160px;
+    cursor: pointer;
+    position: relative;
+    img {
+        width: 20px;
+        height: 20px;
+    }
+    .filter-text {
+        display: block;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        color: #49627E;
+    }
+    .variables {
+        @include flexboxer(16px, column, center, flex-start);
+        top: 100%;
+        padding: 28px 0;
+        position: absolute;
+        .variable {
+            @include flexboxer(17px, row, flex-start);
+            cursor: pointer;
+            input {
+                width: 16px;
+                height: 16px;
+            }
+            .text {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 15px;
+                display: flex;
+                align-items: center;
+                color: #49627E;
+            }
+        }
+    }
+}
+
+.filter-catalog {
+    @include paddingthon;
+    @include flexboxer(10px, row, space-between);
+    background: white;
+}

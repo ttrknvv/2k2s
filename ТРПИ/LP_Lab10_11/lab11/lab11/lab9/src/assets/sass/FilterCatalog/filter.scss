@@ -1,0 +1,94 @@
+@import './../mixins.scss';
+.filter {
+    @include flexer(20px, row, flex-start);
+    width: 160px;
+    cursor: pointer;
+    position: relative;
+    img {
+        width: 20px;
+        height: 20px;
+    }
+    .filter-text {
+        display: block;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        color: #49627E;
+    }
+    .variables {
+        @include flexer(16px, column, center, flex-start);
+        top: 100%;
+        padding: 28px 0;
+        position: absolute;
+        z-index: 100;
+        background-color: white;
+        border-radius: 1px;
+        .variable {
+            @include flexer(17px, row, flex-start);
+            cursor: pointer;
+            input {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}
+
+.text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    color: #49627E;
+}
+
+body {
+    @media (max-width: 1000px) {
+        .filter-catalog {
+            align-self: center;
+            gap: 38px;
+            .filter,
+            .filterButton {
+                width: 130px;
+                @media (max-width: 500px) {
+                    width: 90px;
+                    &.filterButton {
+                        width: 70px;
+                    }
+                }
+            }
+            .searchButton {
+                transform: scale(.7)
+            }
+        }
+    }
+}
+
+// <div className="hidden-wrapper">
+//                 { hiddenFiltres?.map(el => 
+//                     <Filter img={ el.img }
+//                             variables={ el.variables }
+//                             key = { i++ }
+//                 />) }
+//             </div>
+.filter-catalog {
+    @include padding;
+    @include flexer(10px, row, space-between);
+    background: white;
+    position: relative;
+    .hidden-wrapper {
+        @include flexer(40px, column);
+        width: 100%;
+        padding: 4px;
+        z-index: 100;
+        background-color: #fff;
+        position: absolute;
+        top: 70px;
+        right: 0;
+    }
+}

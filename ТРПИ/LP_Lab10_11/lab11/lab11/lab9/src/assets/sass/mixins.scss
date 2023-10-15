@@ -1,0 +1,20 @@
+@mixin flexer($gap: 0px, $fd: row, $jc: center, $ai: center) {
+    display: flex;
+    flex-direction: $fd;
+    gap: $gap;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+$paddingFull: 100px;
+$paddingTablet: 67px;
+$paddingMobile: 10px;
+@mixin padding {
+    padding: 0 $paddingFull;
+    @media (max-width: 1000px) {
+        padding: 0 $paddingTablet;
+        @media (max-width: 500px) {
+            padding: 0 $paddingMobile;
+        }
+    }
+}

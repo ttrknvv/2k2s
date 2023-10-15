@@ -1,0 +1,24 @@
+/* стили для элементов */
+*{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    border: 2px solid black;
+    padding: 10px;
+    width: 15%;
+}
+
+input[type=text] {
+    width: 35%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus {
+    width: 35%;
+}

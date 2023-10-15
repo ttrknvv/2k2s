@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #0C3148;
+    display: block;
+    padding-top: 0.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#LogoText {
+    font-size: 160%;
+    color: #C8E1FF;
+    height:min-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: max-content;
+}
+
+#TextInfo {
+    font-size: 120%;
+    color: #E8998E;
+    height: min-content;
+    width: min-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#IconPage {
+    width: 16%;
+}
+
+#IconsSet {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+header {
+    display: flex;
+    margin: auto;
+}
+
+main {
+    display: flex;
+    height: min-content;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.book {
+    display: flex;
+    width: 22%;
+    flex-wrap: wrap;
+    background-color: #C8E1FF;
+    justify-content: space-evenly;
+    margin-bottom: 3%;
+}
+
+.book img {
+    width: 80%;
+    height: 70%;
+    margin-top: 5%;
+}
+
+.book #NameBook {
+    width: 80%;
+    font-weight: bold;
+    font-size: 110%;
+    font-family: 'Corbel';
+}
+
+.book #AuthorBook {
+    width: 80%;
+    font-size: 90%;
+    font-family: 'Corbel';
+}
+
+.book div {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.book div img {
+    width: 18%;
+    height: 84%;
+}
+
+.book div #PriceBook {
+    font-size: 120%;
+    color: #E8998E;
+    height: min-content;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+#MenuSort {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#MenuSort p{
+    color: #C8E1FF;
+    margin-bottom: 2%;
+    margin-top: 3%;
+    font-size: 140%;
+}
+
+#MenuSort #SortMenu{
+    display: flex;
+    color: #0C3148;
+    background-color: #C8E1FF;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0.3%;
+    font-size: 120%;
+    width: 12%;
+    justify-content: space-between;
+}
+
+#MenuSort img {
+    width: 10%;
+    vertical-align: middle;
+}
+
+#Pages img {
+    width: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+#Pages {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 140%;
+    color: #C8E1FF;
+    width: 20%;
+    vertical-align: middle;
+    justify-content: space-around;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+footer p {
+    color: #C8E1FF;
+    margin-left: 2%;
+    width: 120%;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 140%;
+}
+
+footer #TelIcon {
+    width: 3%;
+    height: 3%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+footer img {
+    width: 10%;
+}
+
+hr {
+    margin-top: 10%;
+    margin-bottom: 1%;
+    color: #C8E1FF;
+}
+
+@media (max-width: 375px)
+{
+    #LogoText {
+        font-size: 0%;
+    }
+    
+    #TextInfo {
+        font-size: 80%;
+    }
+    #IconPage {
+        width: 20%;
+    }
+    #IconsSet {
+        width: 36%;
+    }
+    .book {
+        width: 46%;
+    }
+    
+    .book img {
+        width: 70%;
+        height: 60%;
+        margin-top: 7%;
+    }
+    
+    .book #NameBook {
+        width: 70%;
+        font-size: 80%;
+    }
+    
+    .book #AuthorBook {
+        width: 70%;
+        font-size: 70%;
+    }
+    .book div {
+        width: 70%;
+        margin-bottom: 5%;
+    }
+    
+    .book div img {
+        height: 64%;
+    }
+    
+    .book div #PriceBook {
+        font-size: 80%;
+    }
+    
+    #MenuSort {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+    
+    #MenuSort p{
+        font-size: 0%;
+    }
+    
+    #MenuSort #SortMenu{
+        width: 28%;
+        font-size: 70%;
+    }
+    #Pages img {
+        width: 10%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    
+    #Pages {
+        font-size: 70%;
+        width: 50%;
+        margin-top: 3%;
+    }
+    
+    footer {
+        margin-bottom: 6%;
+    }
+    footer p {
+        margin-left: 2%;
+        width: 120%;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 70%;
+    }
+    
+    footer #TelIcon {
+        width: 6%;
+        height: 6%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    footer img {
+        width: 0%;
+    }
+    
+    hr {
+        visibility: hidden;
+    }
+}

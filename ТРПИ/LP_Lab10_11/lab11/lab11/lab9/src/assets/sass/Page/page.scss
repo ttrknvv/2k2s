@@ -1,0 +1,72 @@
+@import './../mixins.scss';
+.page {
+    @include flexer(40px, column, flex-start, flex-start);
+}
+
+.vac-wrapper {
+    @include padding;
+    @include flexer(1px, row, center, flex-start);
+    width: 100%;
+    .info-about-vacation {
+        @include flexer(27px, column, flex-start, flex-start);
+        position: relative;
+        &>img {
+            position: absolute;
+            right: 3px;
+            top: 3px;
+            cursor: pointer;
+        }
+        .img-and-title {
+            .title-info {
+                @include flexer(8px, column, flex-start, flex-start);
+            }
+            @include flexer(51px, row, flex-start);
+            .title {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+                display: flex;
+                align-items: center;
+                color: #000000;
+            }
+            .company-and-city {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 10px;
+                line-height: 12px;
+                display: flex;
+                align-items: center;
+                color: #9AAAB5;
+            }
+        }
+        .price {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            color: #000000;
+        }
+        .all-desc {
+            @include flexer(10px, column, flex-start, flex-start);
+            .paragraph {
+                font-style: normal;
+                font-size: 13px;
+                display: flex;
+                align-items: center;
+                color: #000000;
+                &.you-have,
+                &.important {
+                    font-weight: 700;
+                }
+            }
+            .description,
+            .exp-in,
+            .knowledge {
+                @include flexer(10px, column, flex-start, flex-start);
+            }
+        }
+    }
+}

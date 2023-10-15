@@ -1,0 +1,18 @@
+// <button onClick={() => command()}
+// className="searchButton">
+// { context }
+// </button>
+.searchButton {
+    padding: 21px;
+    background: #0070FB;
+    border-radius: 0px 10px 10px 0px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+}

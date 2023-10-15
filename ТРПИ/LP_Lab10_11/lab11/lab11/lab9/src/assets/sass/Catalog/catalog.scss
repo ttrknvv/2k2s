@@ -1,0 +1,7 @@
+@import './../mixins.scss';
+.catalog {
+    @include flexer(15px, column, center, flex-start);
+    @media (max-width: 1000px) {
+        justify-self: center;
+    }
+}

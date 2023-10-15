@@ -1,0 +1,24 @@
+// import IButton from "../IButton";
+// const FiltersButton = ({ context, command}: IButton) => {
+//     return (
+//         <button onClick={() => command() }>
+//             { context }
+//         </button>
+//         )
+// }
+// export default FiltersButton;
+.filterButton {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    color: #49627E;
+    background: none;
+    outline: none;
+    border: none;
+    width: 160px;
+    text-align: center;
+}

@@ -1,0 +1,5 @@
+@import './mixinForAll.scss';
+.catalog {
+    @include flexboxer(15px, column, center, flex-start);
+    @include paddingthon;
+}
